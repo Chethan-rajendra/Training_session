@@ -1,2 +1,9 @@
 	Hi Git
 	
+
+	<!DOCTYPE html>
+<html>
+<head>
+<title>JQUERY</title>
+ </head>
+ <body>
