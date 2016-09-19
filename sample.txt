@@ -1,2 +1,21 @@
 	Hi Git
 	
+
+	<!DOCTYPE html>
+<html>
+<head>
+<title>JQUERY</title>
+ </head>
+ <body>
+  <style type="text/css">
+  	
+  	.clas
+   {
+   	   color: red;
+	   padding: 15px;
+	   border: 5px solid red;
+     }
+
+  </style>
+  </body>
+  </html>
