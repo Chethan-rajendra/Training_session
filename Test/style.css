@@ -35,6 +35,7 @@ h3{
 	background-color:#EA6060;
 	color: white;
 	padding: 20px;
+	align-left:5px;
 
 }
 
@@ -45,6 +46,7 @@ hr{
 
 footer{
 	text-align:center;
+	color: white;
 	background-color: #565D67;
 }
 
@@ -52,4 +54,9 @@ table{
 	padding: 10px;
 	width:100%;
 	align-left:20px;
+}
+
+h5
+{
+	color:red;
 }

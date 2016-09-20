@@ -6,15 +6,20 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    
+
+   
+
 	</head>
 	<body>
 	   <div id="HOME">
 	   
 	   <img src="gangout-images/assets/asets/gangout-logo.png" height="40px" width="200px" alt="Loading"/></div>
+
+	
        
 	     <ul>
            <li><a class="active" href="#ABOUT">ABOUT</a></li>
@@ -24,12 +29,34 @@
           
           
           
-	    
+	    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="gangout-images/assets/slider/slider1.png" width="1300" height="350">
+       <img class="mySlides" src="gangout-images/assets/slider/slider2.png" width="1300" height="350">
+       <img class="mySlides" src="gangout-images/assets/slider/slider3.png" width="1300" height="350">
+       </div>
+
 	   
 
-		<img class="fit" src="gangout-images/assets/slider/slider3.png"  width="1300" height="350">
+		<!-- <img class="fit" id="img"  src="gangout-images/assets/slider/slider3.png" width="1300" height="350"> -->
 	    <h2>
             Mysore Web Aps Engg</h2>
+
+               <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+         }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+      </script>
 
       <!-- Container (TOUR Section) -->
 <div id="tour" class="bg-1">
@@ -39,33 +66,69 @@
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
+        <p>Event 1 Title Herer<br>Signika Bold 20 Pt</p>
           <img src="gangout-images/assets/slider/slider1.png" alt="Paris" width="400" height="300">
-          <p>Past event</p>
+          <p style="color:red">Past event</p>
           <p>Core Ruby Workshop for<br> Signika 16 Pts Bolt</p>
           
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
+        <p style="color:red"> Mysore Web Apps <br>
+        Engineering</p>
           <img src="gangout-images/assets/slider/slider2.png" alt="New York" width="400" height="300">
-          <p>Past event</p>
+          <p style="color:red">Past event</p>
           <p>Core Ruby Workshop for<br> Signika 16 Pts Bolt</p>
        
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
+        <p> Event # Title Here<br>
+           Signika Bold 20pt</p>
           <img src="gangout-images/assets/slider/slider3.png" alt="San Francisco" width="400" height="300">
-          <p>past event</p>
+          <p style="color:red">past event</p>
           <p>Core Ruby Workshop for<br> Signika 16 Pts Bolt</p>
       
         </div>
+
       </div>
     </div>
+    <div class="col-sm-7">
+    <div class="thumbnail">
+    <p>The New York Knowledge Engineering Meetup is a Meetup that aims to bring together the community of software professionals, researchers, and enthusiasts, interested in how topics such as Artificial Intelligence, Knowledge Representation and Reasoning, Machine Learning, and Natural Language Processing fit together in the engineering of intelligent software system applications that acquire, exploit, or create knowledge.</p>
+    <p>
+    	We seek to create a friendly yet stimulating environment for people to network and share knowledge on this topics, through a platform of events and presentations. If you're interested in getting involved sign up and reach out. We look forward to connecting with you.
+    </p>
+    <p>
+    	The ISWC organizers have agreed to open up the posters & demo reception evening to NY Semantic Web and Knowledge Engineering Meetup members. 
+    </p> </div>
   </div>
+  <div class="col-sm-3">
+  <div class="thumbnail">
+  <p> Date :<br>
+        <h5>21 July 2016  Monday</h5>
+
+        Venue:<br>
+        <h5>winix Technologies</h5>
+        Horizon, HIEMA Convention Center Road, Hebbal Industrial Estate 5, Mysuru, Karnataka 570016<br></p>
+
+    <h5>Attending</h5>
+    Kishan g. <br>
+    Daniel P. <br>
+    Chippy K. <br>
+
+  </p>
+  
+  </div>
+  </div>
+  </div>
+  </div>
+ 
    <footer>
-  <p> Home About Us Events Communities Blog Terms Privacy Policly Contact Us</p>
-    <p>GANGOUT</p>
+  <p> Home<img src="gangout-images/assets/asets/icon-down-arrow.png"> About Us <img src="gangout-images/assets/asets/icon-down-arrow.png">Events <img src="gangout-images/assets/asets/icon-down-arrow.png">Communities <img src="gangout-images/assets/asets/icon-down-arrow.png">Blog <img src="gangout-images/assets/asets/icon-down-arrow.png">Terms <img src="gangout-images/assets/asets/icon-down-arrow.png">Privacy Policly <img src="gangout-images/assets/asets/icon-down-arrow.png">Contact Us<img src="gangout-images/assets/asets/icon-down-arrow.png"></p>
+    <p><img src="gangout-images/assets/asets/gangout-logo-white.png"></p>
     <p>	&#169; 2014 A Product by Qwinix Technology Inc. All rights reserved.</p>
    </footer>
  </div>
@@ -128,23 +191,19 @@ Joshi helps the engineering team get things done smoothly and faster than ever b
 
 <tr>
 <td style="width: 10%" ><img src="gangout-images/assets/asets/kiran.png"></td> 
-    <td style="width: 80%"><strond>Kiran Kumar, Community Experience Program Manager</strond><br>
+    <td style="width: 80%"><strong>Kiran Kumar, Community Experience Program Manager</strong><br>
 Kiran Kumar helps members make meaningful connections with people with shared interests and helps to make sure that Meetup is a safe and trustworthy place. Originally from Hubli.<hr/></td></tr>
 
 </tr>
-<tr> 
-    <td colspan="2">
 
-    </td>
-</tr>
 
 </table>
 </div>
          
           <hr>
-             <footer>
-  <p> Home About Us Events Communities Blog Terms Privacy Policly Contact Us</p>
-    <p>GANGOUT</p>
+    <footer>
+  <p> Home<img src="gangout-images/assets/asets/icon-down-arrow.png"> About Us <img src="gangout-images/assets/asets/icon-down-arrow.png">Events <img src="gangout-images/assets/asets/icon-down-arrow.png">Communities <img src="gangout-images/assets/asets/icon-down-arrow.png">Blog <img src="gangout-images/assets/asets/icon-down-arrow.png">Terms <img src="gangout-images/assets/asets/icon-down-arrow.png">Privacy Policly <img src="gangout-images/assets/asets/icon-down-arrow.png">Contact Us<img src="gangout-images/assets/asets/icon-down-arrow.png"></p>
+    <p><img src="gangout-images/assets/asets/gangout-logo-white.png"></p>
     <p>	&#169; 2014 A Product by Qwinix Technology Inc. All rights reserved.</p>
    </footer>
 
@@ -165,11 +224,16 @@ Kiran Kumar helps members make meaningful connections with people with shared in
            </div>
            </ul>
            <hr/>
-           <input type="text" name="" value="First name">
+          
+         
 
-     </div>
 
 
+ <footer>
+  <p> Home<img src="gangout-images/assets/asets/icon-down-arrow.png"> About Us <img src="gangout-images/assets/asets/icon-down-arrow.png">Events <img src="gangout-images/assets/asets/icon-down-arrow.png">Communities <img src="gangout-images/assets/asets/icon-down-arrow.png">Blog <img src="gangout-images/assets/asets/icon-down-arrow.png">Terms <img src="gangout-images/assets/asets/icon-down-arrow.png">Privacy Policly <img src="gangout-images/assets/asets/icon-down-arrow.png">Contact Us<img src="gangout-images/assets/asets/icon-down-arrow.png"></p>
+    <p><img src="gangout-images/assets/asets/gangout-logo-white.png"></p>
+    <p>	&#169; 2014 A Product by Qwinix Technology Inc. All rights reserved.</p>
+   </footer>
 
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	 <script src="js/bootstrap.min.js"></script>
